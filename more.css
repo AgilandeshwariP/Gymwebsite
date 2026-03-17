@@ -1,0 +1,85 @@
+body {
+    background-color: black;
+    color: white;
+    margin: 60px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 20px;
+}
+
+.programs {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px 30px;
+    padding: 20px;
+}
+
+.pro-para {
+    margin-left: -30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.text-box{
+    width: 500px;
+}
+
+.pro-para h1,h3 {
+    color: orange;
+}
+
+.pro-para p{
+    text-align: justify;
+}
+
+.personal-trainingimg {
+    height: 40px;
+    width: 40px;
+}
+
+.weight-gainimg {
+    height: 40px;
+    width: auto;
+}
+
+.weight-lossimg {
+    height: 40px;
+    width: auto;
+
+
+}
+
+.workout-img {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2,1fr);
+}
+.more-img1 {
+    height: 300px;
+    width: 200px;
+}
+
+.more-img2 {
+    height: 300px;
+    width: 200px;
+}
+
+.more-img3 {
+    height: 300px;
+    width: 200px;
+}
+
+.more-img4 {
+    height: 300px;
+    width: 200px;
+}
+
+@media screen and (max-width: 768px) {
+    .programs {
+        flex-direction: column;
+    }
+    .text-box {
+        width: 100%;
+    }
+    .workout-img {
+        grid-template-columns: 1fr; 
+    }
+}

@@ -1,0 +1,55 @@
+.heading {
+    text-align: center; 
+}
+
+.blog-section {
+    display: grid;                      
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 50px;                          
+    padding: 60px;
+}
+
+.blog-card {
+    display: flex;          
+    gap: 20px;              
+    align-items: flex-start;
+}
+
+.blog-card img {
+    width: 200px;         
+    height: 200px;
+    object-fit: cover;     
+}
+
+.blog-card h2 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.date {
+    font-size: 14px;
+    color: gray;
+}
+
+.read-more {
+    color: blue;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+@media screen and (max-width: 768px) {
+    nav ul { flex-direction: column; align-items: center; }
+
+    .blog-section {
+        grid-template-columns: 1fr; 
+        padding: 20px;
+    }
+    .blog-card {
+        flex-direction: column; 
+    }
+    .blog-card img {
+        width: 100%;
+        height: auto;
+    }
+}
